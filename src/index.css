@@ -1,13 +1,77 @@
-body {
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: rgb(30, 29, 29);
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 550px; 
+  gap: 30px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.input-div{
+  height: 250px;
+  position: relative;
+  display: flex;
+}
+
+.input-div img{
+ width: 250px;
+ height: 250px;
+}
+
+.file-section{
+  display: flex;
+  justify-content: space-between;
+  gap: 2px;
+  position: absolute;
+bottom: 0;
+right: 0;
+left: 0;
+width: 100%;
+}
+
+.file-section input{
+flex: 1;
+background-color: rgb(77, 61, 177);
+border: none;
+justify-self: center;
+font-size: 15px;
+color: white;
+}
+
+.file-section button {
+flex: 1;
+background-color: rgb(77, 61, 177);
+border: none;
+color: white;
+}
+
+.file-section button:hover, .file-section input:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.download-btn{
+  position: absolute;
+bottom: 0;
+right: 0;
+left: 0;
+background-color: rgb(77, 61, 177);
+width: 250px;
+justify-self: center;
+height: 30px;
+border: none;
+border-radius: 3x;
+font-size: 15px;
+color: white;
+}
+
+.download-btn:hover{
+  cursor: pointer;
+  opacity: 0.8;
 }

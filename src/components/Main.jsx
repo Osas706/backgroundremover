@@ -41,25 +41,21 @@ const Main = () => {
 
   return (
     <div className="container">
-      
-        <div className="input-div">
-          <img src={selected ? URL.createObjectURL(selected) : ""} />
+      <div className="input-div">
+        <img src={selected ? URL.createObjectURL(selected) : "./ng.png"} />
 
-          <div className="file-section">
-            <input type="file" name="" id="" onChange={handleFileInputChange} />
-            <button onClick={handleFileUpload}>Upload</button>
-          </div>
+        <div className="file-section">
+          <input type="file" name="" id="" onChange={handleFileInputChange} />
+          <button onClick={handleFileUpload}>Upload</button>
         </div>
- 
+      </div>
 
-      
-        <div className="input-div">
-          <img src={finalImage} />
-          <a href={finalImage} download={"save.png"} className="download-btn">
-            <button className="download-btn">Download Image</button>
-          </a>
-        </div>
-
+      <div className="input-div">
+        <img src={finalImage ? finalImage : "./1695617-200.png"} />
+        <a href={finalImage} download={"save.png"} className="download-btn">
+          <button className="download-btn">Download Image</button>
+        </a>
+      </div>
     </div>
   );
 };

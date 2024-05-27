@@ -35,8 +35,7 @@ const Main = () => {
       setFinalImage(url);
     } catch (error) {
       console.error("Error uploading file:", error);
-    } finally {
-    }
+    };
   };
 
   return (
